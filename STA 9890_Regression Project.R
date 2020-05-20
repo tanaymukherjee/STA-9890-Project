@@ -249,6 +249,11 @@ plot(cv.fit.en,sub = "CV for Elastic Net", cex.sub = 1) #elasticnet
 plot(cv.fit.lr,sub = "CV for Lasso", cex.sub = 1) #lasso
 plot(cv.fit.rr,sub = "CV for Ridge", cex.sub = 1) #ridge
 par(mfrow=c(1,1))
+            
+# Calculating minimum lambdas:
+cv.fit.rr$lambda.min
+cv.fit.en$lambda.min
+cv.fit.lr$lambda.min
 
 
 # Residual Plots
