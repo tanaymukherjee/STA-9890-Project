@@ -17,7 +17,7 @@ library(gridExtra)
 library(glmnet)
 library(tidyverse)
 
-
+# Set the working directory on your local machine to replicate it. The file is under data folder in this repository.
 # Read the file
 fd <- read.csv("C:\\Users\\its_t\\Documents\\CUNY\\Spring 2020\\9890 - Statistical Learning for Data Mining\\Project\\Financial Distress.csv")
 
@@ -87,7 +87,7 @@ n.test <- nrow(fd_filtered[(1 + split):n, ])
 
 
 # Looping sequence
-M = 20
+M = 100
 
 # lr = Lasso Regression
 Rsq.test.lr  <- rep(0,M)
@@ -276,7 +276,7 @@ residual_plot
 
 #------------------------------------------------------------------
 #Create bootstraped samples
-bootstrapSamples = 1
+bootstrapSamples = 100
 
 #Store the importance of each coefficient in RF and the betas in LS,EN,RD
 beta.rf.bs       <-    matrix(0, nrow = p, ncol = bootstrapSamples)    
