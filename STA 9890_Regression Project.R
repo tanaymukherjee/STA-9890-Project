@@ -117,8 +117,8 @@ train.res.en <- rep(0,n.train)
 test.res.en  <- rep(0,n.test)
 
 
-# Set the seed of R‘s random number generator, which is useful for
-# creating simulations or random objects that can be reproduced.
+# Set the seed of R's random number generator, which is useful for
+# creating simulations for random objects that can be reproduced.
 set.seed(1)
 
 
