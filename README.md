@@ -1,9 +1,9 @@
 # Financial Distress
 ## STA-9890-Project
-In this exercise we are attempting at running various regression models through namely Lasso, Ridge, Elastic Net and Random Forrest to predict on a financial dataset from multiple firms to see if we can predict distress
+In this exercise we are attempting at running various regression models through namely Lasso, Ridge, Elastic Net and Random Forrest to predict on a financial dataset from multiple firms to see if we can predict distress.
 
 
-## Understandin the models
+## Understanding the models
 ### Elastic Net:
 In statistics and, in particular, in the fitting of linear or logistic regression models, the elastic net is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
 
@@ -15,7 +15,7 @@ Lasso regression uses the L1 penalty term and stands for Least Absolute Shrinkag
 Similar to ridge regression, a lambda value of zero spits out the basic OLS equation, however given a suitable lambda value lasso regression can drive some coefficients to zero. The larger the value of lambda the more features are shrunk to zero. This can eliminate some features entirely and give us a subset of predictors that helps mitigate multi-collinearity and model complexity. Predictors not shrunk towards zero signify that they are important and thus L1 regularization allows for feature selection (sparse selection).
 
 ### Ridge:
-Ridge regression uses L2 regularization which adds the following penalty term to the OLS equation.
+Ridge regression uses L2 regularization which adds the penalty term to the OLS equation.
 
 The L2 term is equal to the square of the magnitude of the coefficients. In this case if lambda(λ) is zero then the equation is the basic OLS but if it is greater than zero then we add a constraint to the coefficients. This constraint results in minimized coefficients (aka shrinkage) that trend towards zero the larger the value of lambda. Shrinking the coefficients leads to a lower variance and in turn a lower error value. Therefore, Ridge regression decreases the complexity of a model but does not reduce the number of variables, it rather just shrinks their effect.
 
@@ -26,11 +26,11 @@ The basic idea behind this is to combine multiple decision trees in determining 
 
 
 ## Knowing the dataset
-We have a total of 66 features and 3761 observation. Our y-variable is called financial distress. We are trying to know how stable firms are when compared to all other financial institutions.
+We have a total of 66 features and 3761 observation. Our y-variable is called 'financial distress'. We are trying to know how stable firms are when compared to all other financial institutions.
 
 Basically, if the value of financial distress is less than -1 for any firm it means they are not doing well and thus have a high risk of filing for bankruptcy. Similarly, if the value of distress is between -1 to 0 then it seems like the firm is unstable. Lastly, anything over 1 means the firm is safe and is doing well in open markets. That way, we can do a classification exercise out of this data as well but it is beyong our scope for this project.
 
-Right now, we focus on identifying the variables and then run the above 4 models and see how well are they in predicting the distress.
+Right now, we focus on identifying the variables that are useful for our regression, and then run the above 4 models and see how well can they predict the financial distress, and which are the most prominent features that help us achieve better prediction.
 
 
 ## Procedure
@@ -68,6 +68,8 @@ features and how are they coming for 4 regression models we discussed above in b
 6. Video recording: https://vimeo.com/420873137. It is password protected and is available for view to only Prof. Rad.
 
 ## Submission to
-Prof. Kamiar Rahnama Rad
+- Prof. Kamiar Rahnama Rad
+```
 Subject: 9890 - Statistical Learning for Data Mining
 Session: Fall, 2020
+```
